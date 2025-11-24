@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { DollarSign, Sparkles, Crown, Award } from "lucide-react";
+import { DollarSign, Sparkles, Crown, Award, Instagram, Facebook } from "lucide-react";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -176,12 +175,12 @@ export default function ServicesPage() {
         ]}
         socialLinks={[
           {
-            icon: "Instagram",
+            icon: Instagram,
             href: "https://instagram.com/blestiashiy",
             ariaLabel: "Follow us on Instagram"
           },
           {
-            icon: "Facebook",
+            icon: Facebook,
             href: "https://facebook.com/blestiashiy",
             ariaLabel: "Follow us on Facebook"
           }

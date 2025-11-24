@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { Users, MessageSquare } from "lucide-react";
+import { Users, MessageSquare, Instagram, Facebook } from "lucide-react";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
@@ -167,12 +166,12 @@ export default function AboutPage() {
         ]}
         socialLinks={[
           {
-            icon: "Instagram",
+            icon: Instagram,
             href: "https://instagram.com/blestiashiy",
             ariaLabel: "Follow us on Instagram"
           },
           {
-            icon: "Facebook",
+            icon: Facebook,
             href: "https://facebook.com/blestiashiy",
             ariaLabel: "Follow us on Facebook"
           }

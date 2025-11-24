@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { Scissors, Star, DollarSign } from "lucide-react";
+import { Scissors, Star } from "lucide-react";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
 import TagAbout from '@/components/sections/about/TagAbout';
@@ -199,18 +198,6 @@ export default function HomePage() {
                 href: "/contact"
               }
             ]
-          }
-        ]}
-        socialLinks={[
-          {
-            icon: "Instagram",
-            href: "https://instagram.com/blestiashiy",
-            ariaLabel: "Follow us on Instagram"
-          },
-          {
-            icon: "Facebook",
-            href: "https://facebook.com/blestiashiy",
-            ariaLabel: "Follow us on Facebook"
           }
         ]}
       />
