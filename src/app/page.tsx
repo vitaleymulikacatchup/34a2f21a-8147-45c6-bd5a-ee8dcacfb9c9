@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { Scissors, Star, Users, MessageSquare, Crown } from "lucide-react";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
-import TagAbout from '@/components/sections/about/TagAbout';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
@@ -73,13 +72,6 @@ export default function HomePage() {
               imageAlt: "Hair styling service"
             }
           ]}
-        />
-      </div>
-
-      <div id="about" data-section="about" className="mx-auto px-4 md:px-6">
-        <TagAbout
-          tag="Our Story"
-          description="At Blestiashiy, we combine traditional barbering techniques with modern style to deliver exceptional grooming experiences. Our master barbers bring decades of expertise to every cut, shave, and style, ensuring you leave looking and feeling your absolute best."
         />
       </div>
 
