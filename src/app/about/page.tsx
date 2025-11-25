@@ -1,10 +1,11 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { Users, MessageSquare, Instagram, Facebook } from "lucide-react";
+import { Users, MessageSquare, Instagram, Facebook, Crown } from "lucide-react";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
+import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 
 export default function AboutPage() {
@@ -99,6 +100,56 @@ export default function AboutPage() {
               testimonial: "Outstanding quality and professionalism. The barbers here are true artists. Couldn't be happier with the results.",
               imageSrc: "https://pixabay.com/get/g9428850fc974249776312ad463f5c676b640caf3c095ad8d52071b8c42e327b893fd01a430f0781cf9dbd7b3af3eaecaf257b2c2d7646173d44eb6a24128a72f_1280.jpg",
               imageAlt: "James Wilson testimonial"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="pricing" data-section="pricing" className="mx-auto px-4 md:px-6">
+        <PricingCardOne
+          title="Premium Services"
+          description="Experience our luxury barbering services with transparent pricing"
+          tag="Our Rates"
+          tagIcon={Crown}
+          textboxLayout="default"
+          animationType="slide-up"
+          plans={[
+            {
+              id: "classic-cut",
+              badge: "Most Popular",
+              price: "$35",
+              subtitle: "Professional haircut with consultation",
+              features: [
+                "Consultation and styling advice",
+                "Precision cut with professional tools",
+                "Hair wash and conditioning",
+                "Styling and finishing"
+              ]
+            },
+            {
+              id: "beard-grooming",
+              badge: "Signature Service",
+              price: "$25",
+              subtitle: "Complete beard grooming experience",
+              features: [
+                "Beard trimming and shaping",
+                "Hot towel treatment",
+                "Beard oil application",
+                "Mustache grooming"
+              ]
+            },
+            {
+              id: "full-package",
+              badge: "Complete Package",
+              price: "$55",
+              subtitle: "The ultimate grooming experience",
+              features: [
+                "Haircut with consultation",
+                "Beard grooming and shaping",
+                "Hot towel shave",
+                "Hair and beard styling",
+                "Premium aftercare products"
+              ]
             }
           ]}
         />
